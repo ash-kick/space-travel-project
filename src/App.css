@@ -1,0 +1,206 @@
+html {
+     background-color: black;
+     color: rgb(253, 253, 195);
+     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("assets/backgrounds/nebulae.jpg");
+     background-position: center;
+     font-size: 18px;
+     font-family: "Courier New", Courier, monospace;
+}
+
+body {
+     padding: 50px;
+}
+
+nav {
+     display: flex;
+     gap: 16px;
+     justify-content: end;
+     margin: 0 auto;
+}
+
+header nav a {
+     text-decoration: none;
+     padding: 6px;
+     border-radius: 4px;
+     background: rgba(245, 245, 245, 0.228);
+     cursor: pointer;
+     color: rgb(253, 253, 195);
+}
+
+header nav a:hover {
+     background-color: rgba(1, 151, 174, 0.447);
+}
+
+header nav a.active {
+     background: rgba(1, 151, 174, 0.447);
+     color: rgb(253, 253, 195);
+}
+
+.page-content {
+     background: rgba(245, 245, 245, 0.151);
+     padding: 10px;
+     border-radius: 4px;
+     min-height: 600px;
+}
+
+.loading-message {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 200px;
+}
+
+/* planets */
+
+.planet {
+     margin: 10px;
+     padding: 10px;
+     border-radius: 4px;
+     height: 200px;
+     background: rgba(245, 245, 245, 0.151);
+     display: flex;
+}
+
+.planet-card {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     background-color: black;
+     padding: 10px;
+     border: 1px dotted white;
+     width: 180px;
+     height: 180px;
+     margin-right: 20px;
+}
+
+.planet-title {
+     display: flex;
+     justify-content: left;
+     align-items: center;
+}
+
+.planet-image {
+     height: 80px;
+     width: 80px;
+     border: none;
+}
+
+.spacecraft-planet-list {
+     border-radius: 4px;
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.spacecraft-planet-detail {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     border: 1px dotted white;
+     margin: 5px;
+     padding-left: 5px;
+     padding-right: 10px;
+     width: 150px;
+}
+
+.spacecraft-planet-detail:hover {
+     background-color: rgba(245, 245, 245, 0.151);
+     cursor: pointer;
+}
+
+.planet-spacecraft-image {
+     height: 40px;
+     padding: 10px;
+}
+
+.planet-spacecraft-image-icon {
+     height: 40px;
+     padding: 10px;
+}
+
+/* spacecrafts */
+
+a {
+     text-decoration: none;
+     color: white;
+}
+
+.spacecraft-list-item {
+     display: flex;
+     align-items: top;
+     justify-content: space-between;
+     margin: 10px;
+     padding: 10px;
+     border-radius: 4px;
+     height: 130px;
+     background-color: rgba(245, 245, 245, 0.151);
+}
+
+.spacecraft-list-item:hover {
+     border: 0.5px solid rgb(253, 253, 195);
+}
+
+.spacecraft-icon-details {
+     display: flex;
+     align-self: center;
+}
+
+.spacecraft-list-icon {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     align-self: center;
+     font-size: 50px;
+     width: 100px;
+     height: 100px;
+     border: 1px dashed white;
+     cursor: pointer;
+     margin-right: 10px;
+}
+
+button {
+     height: 35px;
+     width: 100px;
+     color: white;
+     background: rgba(245, 245, 245, 0.151);
+     cursor: pointer;
+     border: 1px solid white;
+     margin: 10px;
+     font-family: "Courier New", Courier, monospace;
+}
+
+/* build spacecraft */
+
+.build-button {
+     width: 160px;
+     margin-top: 20px;
+     align-self: center;
+     font-family: "Courier New", Courier, monospace;
+}
+
+form {
+     display: flex;
+     flex-direction: column;
+}
+
+input,
+textarea {
+     background-color: rgba(255, 255, 255, 0.186);
+     color: white;
+     border: 1px dashed white;
+     font-size: 16px;
+     border-radius: 4px;
+     margin: 5px;
+}
+
+input:focus,
+textarea:focus {
+     background-color: rgba(255, 255, 255, 0.338);
+}
+
+.spacecraft-form-error {
+     color: red;
+     text-transform: uppercase;
+}
